@@ -1,0 +1,25 @@
+.outer{
+  position: relative;
+  background-image: url("../../public/IMG.jpeg") , linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-size: cover;
+  min-height: 100vh;
+  isolation: isolate;
+}
+
+.outer::after {
+  content:'';
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100vw;
+  background-color: rgba(234, 229, 229, 0.5); /* Adjust the opacity */
+  z-index: -1;
+}
+
+.title{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  
+}

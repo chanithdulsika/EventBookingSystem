@@ -1,0 +1,40 @@
+<div class="outer">
+
+
+<!--STARTING THE HEADING PART-->
+<div class="heading">
+  <H1>LATEST EVENTS</H1>
+</div>
+<!--ENDING THE HEADING PART-->
+
+<!--STARTING THE GALLERY PART-->
+  <div class="user-type">
+    <button class="btn btn-primary" routerLink="/vendor">Vendor</button>
+    <button class="btn btn-primary"routerLink="/customer">Customer</button>
+  </div>
+
+  <div class="container mt-5">
+    <h2>Upcoming Events</h2>
+
+    <!-- Event Cards Grid -->
+    <div class="row">
+      <div class="col-md-4"  *ngFor="let event of events">
+        <div class="card mb-4">
+          <img [src]="'http://localhost:8080/api/events/'+event.id+'/image'" class="card-img-top" alt="Event Image">
+          <div class="card-body">
+            <h5 class="card-title">{{ event.name }}</h5>
+            <p class="card-text">
+              <strong>Date:</strong> {{ event.date | date:'longDate' }}<br>
+              <strong>Time:</strong> {{ event.time }}<br>
+              <strong>Venue:</strong> {{ event.venue }}<br>
+              <strong>Tickets Available:</strong> {{ event.availableTicketCount }}<br>
+              <strong>Price:</strong> LKR {{ event.ticketPrice }}
+            </p>
+            <button (click)="openEvent(event)" class="btn btn-primary">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,27 @@
+.outer{
+  padding: 0;
+}
+.event-img-outer{
+  padding: 0;
+}
+.event-img-outer img{
+  /*width: 38vw;*/
+  height: 85vh;
+  padding:0;
+  width: 100%;
+}
+.event-details{
+  padding: 10px;
+}
+.title{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.btn{
+  height: fit-content;
+}
+.description{
+  text-align: left;
+}

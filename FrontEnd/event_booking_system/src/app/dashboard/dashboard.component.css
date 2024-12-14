@@ -1,0 +1,62 @@
+
+.heading {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.user-type{
+  margin: auto;
+  width: fit-content;
+}
+.user-type .btn{
+  margin: 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.event-list {
+  margin: 40px auto;
+  /*margin: auto;*/
+  width: fit-content;
+}
+
+/* Create four equal columns that floats next to eachother */
+.event {
+  border-style: solid;
+  /*border-color: #040faa;*/
+  cursor: pointer;
+  float: left;
+  border-radius: 20px;
+  margin-right: 50px;
+  transition-duration: 300ms;
+}
+.event:hover{
+  transform: scale(1.1);
+}
+
+.img {
+  border-radius: 20px;
+  height: 50vh;
+  width: 200px;
+}
+
+.imagedetails {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
